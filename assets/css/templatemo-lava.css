@@ -103,7 +103,7 @@ ul {
 p {
   font-size: 15px;
   line-height: 25px;
-  color: #888;
+  color: #ffffff;
 }
 
 .whatsapp-icon {
@@ -678,15 +678,15 @@ welcome
 .welcome-area .header-text .left-text {
   position: relative;
   align-self: center;
-  margin-top: 35%;
+  margin-top: 22%;
   transform: perspective(1px) translateY(-30%) !important;
 }
 
 .welcome-area .header-text h1 {
   font-weight: 900;
-  font-size: 52px;
-  line-height: 80px;
-  letter-spacing: 1px;
+  font-size: 36px;
+  line-height: 1.3;
+  letter-spacing: 0.25px;
   margin-bottom: 30px;
   color: #191a20;
 }
@@ -700,11 +700,79 @@ welcome
   font-weight: 300;
   font-size: 17px;
   color: #7a7a7a;
-  line-height: 30px;
+  line-height: 1.2;
   letter-spacing: 0.25px;
   margin-bottom: 40px;
   position: relative;
 }
+
+/* Adjust the size of the picture items */
+#picture-slide .picture-item {
+  position: relative;
+  width: 1000px; /* Adjust width to your needs */
+  max-width: 100%; 
+  overflow: hidden;
+  margin: 0 auto; /* Center the pictures */
+}
+
+#picture-slide .picture-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Text box styling */
+#picture-slide .pic-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  text-align: left;
+}
+
+#picture-slide .picture-item:hover .pic-text {
+  opacity: 1;
+}
+
+/* Owl carousel button adjustments */
+.owl-carousel .owl-nav {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Align left and right */
+  pointer-events: none; /* Prevent interference with text clicks */
+}
+
+.owl-carousel .owl-nav button {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent buttons */
+  border: none;
+  font-size: 36px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: all; /* Make buttons clickable */
+  padding: 15px; /* Add padding for better touch target */
+  border-radius: 50%;
+  z-index: 1; /* Ensure buttons appear above other elements */
+}
+
+/* Positioning the left button */
+.owl-carousel .owl-nav .owl-prev {
+  left: -80px; /* Shift the button fully to the left */
+}
+
+/* Positioning the right button */
+.owl-carousel .owl-nav .owl-next {
+  right: -80px; /* Shift the button fully to the right */
+}
+
 
 @media (max-width: 1420px) {
   .welcome-area .header-text {
@@ -934,7 +1002,7 @@ testimonials
   border-radius: 10px;
   font-size: 46px;
   color: #fff;
-  right: -210px;
+  right: -70px;
   width: 80px;
   height: 80px;
   line-height: 80px;
@@ -951,7 +1019,7 @@ testimonials
   border-radius: 10px;
   font-size: 46px;
   color: #fff;
-  right: -150px;
+  right: -30px;
   width: 80px;
   height: 80px;
   line-height: 80px;
@@ -1011,7 +1079,7 @@ footer .footer-content {
   border-radius: 5px;
   background-color: #fff;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-  
+  margin-top: 150px; /* Adjust this value to move the form down */
 }
 
 footer .right-content {
