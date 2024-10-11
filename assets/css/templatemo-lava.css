@@ -106,6 +106,22 @@ p {
   color: #ffffff;
 }
 
+.logo img {
+  height: 50px; /* Adjust this as needed */
+  width: auto;  /* Keeps the aspect ratio */
+  display: inline-block; /* Keeps the logo inline with the menu */
+  vertical-align: middle; /* Aligns it properly with the menu */
+}
+
+.logo-title {
+    font-size: 24px; /* Adjust as needed */
+    margin-left: 10px; /* Space between logo and text */
+    vertical-align: middle; /* Align text vertically */
+    display: inline-block; /* Ensure it's inline with the logo */
+    line-height: 100px; /* Adjust for vertical centering with logo */
+}
+
+
 .whatsapp-icon {
   position: fixed;
   bottom: 20px;
@@ -738,6 +754,81 @@ welcome
 #picture-slide .picture-item:hover .pic-text {
   opacity: 1;
 }
+
+.faq-section {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-heading h2 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.section-heading p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: background-color 0.3s;
+}
+
+.faq-item:hover {
+  background-color: #f1f1f1;
+}
+
+.faq-question {
+  font-size: 1.3rem;
+  color: #f37805;
+  cursor: pointer;
+}
+
+.faq-answer {
+  font-size: 1rem;
+  color: #555;
+ /* Initially hide answers */
+}
+
+.faq-item.active .faq-answer {
+  display: block; /* Show answer when item is active */
+}
+
+/* ***** Hakkımızda Section Styles ***** */
+.about-us {
+  padding: 60px 0; /* Add some vertical spacing */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+.about-us .section-heading {
+  text-align: center; /* Center the heading */
+  margin-bottom: 40px; /* Space below the heading */
+}
+
+.about-us h2 {
+  font-size: 2.5rem; /* Adjust heading size */
+  color: rgb(255, 149, 0); /* Change title color to orange */
+  margin-bottom: 15px; /* Space below the title */
+}
+
+.about-us p {
+  font-size: 1.2rem; /* Adjust paragraph size */
+  color: #555; /* Slightly lighter text color */
+  line-height: 1.6; /* Improve line spacing */
+  max-width: 800px; /* Limit width for readability */
+  margin: 0 auto; /* Center the paragraph */
+}
+
 
 /* Owl carousel button adjustments */
 .owl-carousel .owl-nav {
